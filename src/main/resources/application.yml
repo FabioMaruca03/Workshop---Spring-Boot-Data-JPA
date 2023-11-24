@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: postgresql
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+
+  datasource:
+    driver-class-name:
+    username: ${DB_USER}
+    password: ${DB_PASS}
+    url: ${DB_URL}
+
+logging:
+  level:
+    sql: trace
